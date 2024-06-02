@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/kostar"
+        android:text="난이도 선택"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="20sp"
+        android:textSize="50sp" />
+    <Button
+        android:id="@+id/easyButton"
+        android:layout_width="300sp"
+        android:layout_height="100sp"
+        android:text="\n쉬움\n10x10 지뢰 12개"
+        android:background="@drawable/easybtn"
+        android:fontFamily="@font/kostar"
+        android:textSize="25sp"
+        android:layout_marginTop="100sp"
+        android:onClick="onSelectDifficulty" />
+
+    <Button
+        android:id="@+id/mediumButton"
+        android:layout_width="300sp"
+        android:layout_height="100sp"
+        android:text="\n보통\n16x16 지뢰 40개"
+        android:background="@drawable/mediumbtn"
+        android:fontFamily="@font/kostar"
+        android:textSize="25sp"
+        android:layout_marginTop="30sp"
+        android:onClick="onSelectDifficulty" />
+
+    <Button
+        android:id="@+id/hardButton"
+        android:layout_width="300sp"
+        android:layout_height="100sp"
+        android:text="\n어려움\n30x16 지뢰 99개"
+        android:background="@drawable/hardbtn"
+        android:fontFamily="@font/kostar"
+        android:textSize="25sp"
+        android:layout_marginTop="30sp"
+        android:onClick="onSelectDifficulty" />
+
+    <Button
+        android:id="@+id/deadlyButton"
+        android:layout_width="300sp"
+        android:layout_height="100sp"
+        android:text="\n아주 어려움\n36x25 지뢰 200개"
+        android:background="@drawable/deadlybtn"
+        android:fontFamily="@font/kostar"
+        android:textSize="25sp"
+        android:textColor="#ff0000"
+        android:layout_marginTop="30sp"
+        android:onClick="onSelectDifficulty" />
+</LinearLayout>

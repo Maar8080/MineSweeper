@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/howToPlayTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="플레이 방법"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:paddingBottom="16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp">
+
+            <ImageView
+                android:id="@+id/imageExample1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/example1"
+                android:contentDescription="Example Image 1"
+                android:layout_marginEnd="16dp"/>
+
+            <TextView
+                android:id="@+id/instructionText1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="칸을 탭하여 엽니다. \n칸의 숫자는 해당 칸을 둘러싸고 있는 지뢰의 수를 나타냅니다."
+                android:textColor="#000000"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp"
+            android:layout_marginTop="100dp">
+
+            <ImageView
+                android:id="@+id/imageExample2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/example2"
+                android:contentDescription="Example Image 2"
+                android:layout_marginEnd="16dp"/>
+
+            <TextView
+                android:id="@+id/instructionText2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="전환 버튼으로 모드를 변경할 수 있습니다.삽 모드로는 칸을 열고, 깃발 모드는 지뢰라고 생각되는 칸에 깃발을 꼽을 수 있습니다."
+                android:textColor="#000000"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp"
+            android:layout_marginTop="100dp">
+
+            <ImageView
+                android:id="@+id/imageExample3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/example3"
+                android:contentDescription="Example Image 3"
+                android:layout_marginEnd="16dp"/>
+
+            <TextView
+                android:id="@+id/instructionText3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="지뢰라고 생각되는 칸에 깃발을 꼽고, 지뢰가 아니라고 생각되는 칸은 열어 안전한 칸을 모두 열고 \n지뢰의 개수가 0이되면 승리합니다."
+                android:textColor="#000000"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp"
+            android:layout_marginTop="100dp">
+
+            <ImageView
+                android:id="@+id/imageExample4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/example4"
+                android:contentDescription="Example Image 4"
+                android:layout_marginEnd="16dp"/>
+
+            <TextView
+                android:id="@+id/instructionText4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="지뢰를 밟으면 패배합니다. \n게임 종료 시 남은 지뢰가 모두 공개됩니다."
+                android:textColor="#000000"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="150dp"
+            android:background="@drawable/btn"
+            android:fontFamily="@font/kostar"
+            android:layout_gravity="center"
+            android:onClick="onStartGameClick"
+            android:text="시작"
+            android:textSize="30dp" />
+    </LinearLayout>
+</ScrollView>

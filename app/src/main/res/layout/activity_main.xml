@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/kostar"
+        android:text="지뢰찾기"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="50sp" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/btn"
+        android:fontFamily="@font/kostar"
+        android:layout_gravity="center"
+        android:onClick="onStartClicked"
+        android:text="시작"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/howToPlayButton"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn"
+        android:layout_gravity="center"
+        android:fontFamily="@font/kostar"
+        android:onClick="onHowToPlay"
+        android:text="플레이 방법"
+        android:textSize="25dp"/>v
+
+    <Button
+        android:id="@+id/exitButton"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn"
+        android:layout_gravity="center"
+        android:text="종료"
+        android:fontFamily="@font/kostar"
+        android:onClick="onExitClicked"
+        android:textSize="30dp"/>
+</LinearLayout>
